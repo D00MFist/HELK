@@ -14,7 +14,7 @@ HELK_ERROR_TAG="HELK-KIBANA-DOCKER-$TAG_NAME-ERROR:"
 
 # *********** Variables ***************
 TIME_FIELD="@timestamp"
-DEFAULT_INDEX_PATTERN="logs-endpoint-winevent-sysmon-*"
+DEFAULT_INDEX_PATTERN="indexme-*"
 declare -a index_patterns=(
     "elastalert_status"
     "elastalert_status_error"
@@ -24,6 +24,7 @@ declare -a index_patterns=(
     "indexme-*"
     "logs-*"
     "logs-endpoint-*"
+    "logs-endpoint-esf-*"
     "logs-endpoint-winevent-*"
     "logs-endpoint-winevent-application-*"
     "logs-endpoint-winevent-etw-*"
